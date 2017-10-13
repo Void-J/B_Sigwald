@@ -1,0 +1,29 @@
+<header>
+  <div id="navbar" class="my-header" [ngClass]= "{'page-scroll-header': isScrolled}">
+      <div class="wrapper">
+      <a scrollTo href="#hero"><h1>B.Sigwald</h1></a>
+        <p>Sophrologue Certifée RNCP</p>
+  <nav>
+    <ul>
+      <li><a class="underline" scrollTo href="#sophrologie">Sophrologie</a></li>
+      <li><a class="underline" scrollTo href="#parcours">Parcours</a></li>
+      <li><a class="underline" routerLink="/coherence">Cohérence Cardiaque</a></li>
+      <li><a class="underline" scrollTo href="#tarif">Séances & tarifs</a></li>     
+    </ul>
+  </nav>
+</div>    
+  </div>
+<a id="hero"></a>
+  <div id="hero-image">
+    <div class="fade">
+      <div class="wrapper">
+          <br><br><br><br><br>
+        <h2>"Autrement dit"</h2>
+        <h4>Pour être mieux.</h4>
+      </div>
+    </div>
+  </div>
+</header>
+<router-outlet></router-outlet>
+
+

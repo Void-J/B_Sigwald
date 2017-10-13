@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:200');
+
+
+body {
+    background-color: #fff;
+    color: #777;
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+  
+h1 {
+    font-family: 'Crete Round', serif;
+    font-weight: bold;
+    color: white;
+    font-size: 45px;
+}
+h2 {  
+    font-weight: 300;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: -60px;
+}
+h3 {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h4 {
+    font-weight: 300;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: -20px;
+    font-family: 'Arima Madurai', cursive;
+}
+h5 {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: #02b8dd;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 940px;
+}
+
+#navbar{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    transition: background-color 0.5s ease-out;
+}
+
+
+header {
+    height: 700px;
+}
+header h1 {
+    float: left;
+    margin-top: 32px;
+}
+header h1 .color {
+    color: #02b8dd;
+}
+header nav {
+    float: right;
+}
+header nav ul li {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 15px;    
+    transition: all .2s;
+}
+header nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+    font-family: 'Raleway', sans-serif;
+    transition: all .2s;
+}
+
+.wrapper p {
+ position: absolute; 
+ margin-top: 90px;
+ color: white;
+ font-family: 'Raleway', sans-serif;
+}
+
+#hero-image {
+    height: 700px;
+    padding-top: 1px;
+    background: url('/assets/lavande.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#hero-image h2 {
+    margin-top: 235px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#hero-image h4 {
+    margin-top: 60px;
+}
+
+.fade {
+    height: 700px;
+    background: url('/assets/fade.png');
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+}
+
+.underline {
+    display:block;
+    color: white;
+    text-decoration: none;
+}
+
+.underline::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.underline:hover::after {
+    width: 100%;
+}
+
+.page-scroll-header {
+    background-color: #7e4d81 !important;
+    opacity: 0.9;
+    margin-top: -40px;
+}
+
+.page-scroll-header p{
+    display: none; 
+}
+
+.page-scroll-header h1{
+    margin-top: 40px;
+    margin-bottom: -50px;
+}
