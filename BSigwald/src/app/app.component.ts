@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import { MdButton } from '@angular/material';
-import {MdIconModule} from '@angular/material';
-import {MdInputModule} from '@angular/material';
-import {MdCardModule} from '@angular/material';
+import { MatButton } from '@angular/material';
+import {MatIconModule} from '@angular/material';
+import {MatInputModule} from '@angular/material';
+import {MatCardModule} from '@angular/material';
+import { RouterModule, Routes } from '@angular/router';
+
  
 @Component({
   selector: 'app-root',

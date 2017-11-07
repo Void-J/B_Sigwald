@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -15,6 +14,7 @@ export class HeaderComponent {
     currPos: Number = 0;
     startPos: Number = 0;
     changePos: Number = 100;
+    
 
     constructor() {}
 
@@ -26,4 +26,5 @@ export class HeaderComponent {
             this.isScrolled = false;
         }
     }
+    
 }

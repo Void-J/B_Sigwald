@@ -1,25 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+
 
 import { AppComponent } from './app.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdCheckboxModule} from '@angular/material';
-import {FlexLayoutModule} from "@angular/flex-layout";
-import {MdToolbarModule} from '@angular/material';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { FlexLayoutModule} from "@angular/flex-layout";
+import { MatToolbarModule} from '@angular/material';
 import { HeaderComponent } from './header/header.component';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { MaterialModule } from '@angular/material';
-import {MdInputModule} from '@angular/material';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatInputModule} from '@angular/material';
 import { FooterComponent } from './footer/footer.component';
-import {ScrollToModule} from 'ng2-scroll-to';
-import {MdCardModule} from '@angular/material';
+import { ScrollToModule} from 'ng2-scroll-to';
+import { MatCardModule} from '@angular/material';
 import { ParcoursComponent } from './parcours/parcours.component';
-import {MdGridListModule} from '@angular/material';
+import { MatGridListModule} from '@angular/material';
 import { CardComponent } from './card/card.component';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
-import { CoherenceComponent } from './coherence/coherence.component'
+import { CoherenceComponent } from './coherence/coherence.component';
+import { MatTabsModule} from '@angular/material';
+import { MatMenuModule} from '@angular/material';
+import { CohérenceComponent } from './cohérence/cohérence.component';
+import { SophrologieComponent } from './sophrologie/sophrologie.component';
+import 'hammerjs';
 
 @NgModule({
   declarations: [
@@ -28,33 +34,38 @@ import { CoherenceComponent } from './coherence/coherence.component'
     FooterComponent,
     ParcoursComponent,
     CardComponent,
-    CoherenceComponent
+    CoherenceComponent,
+    CohérenceComponent,
+    SophrologieComponent,
   ],
   imports: [
+    MatButtonModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MdButtonModule, 
-    MdCheckboxModule,
+    MatButtonModule, 
+    MatCheckboxModule,
     FlexLayoutModule,
-    MdToolbarModule,
-    MdButtonModule,
+    MatToolbarModule,
+    MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
-    MaterialModule,
-    MdInputModule,
+    MatTabsModule,
+    MatInputModule,
     ScrollToModule.forRoot(),
-    MdCardModule,
-    MdGridListModule,
+    MatCardModule,
+    MatGridListModule,
     HttpClientModule,
-     RouterModule.forRoot([
-      {
-        path: 'coherence',
-        component: CoherenceComponent
-      }
-    ])
-
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+const appRoutes: Routes = [
+
+  {
+    path: 'coherence',
+    redirectTo: '/coherence',
+     pathMatch: 'full',
+  }
+];

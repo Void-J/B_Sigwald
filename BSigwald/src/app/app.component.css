@@ -3,12 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
-
 .container {
     display: flex;
     flex-direction: column;
     background-color: white;
-    
 }
 
 .container h1 {
@@ -23,7 +21,7 @@
     color: #02b8dd;
 }
 
-.container .texte{
+.container .texte {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 20px;
@@ -32,8 +30,8 @@
     margin-bottom: -10px;
 }
 
-.container .colorblue{
-   color: #7e4d81;
+.container .colorblue {
+    color: #7e4d81;
 }
 
 .container .darkblue {
@@ -41,20 +39,20 @@
 }
 
 .example-button-row {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-family: 'Raleway', sans-serif;
-  margin-bottom: 50px;
-  color: white;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 50px;
+    color: white;
 }
 
 .example-button-row a {
     background-color: #7e4d81;
 }
 
-.back-white h3{
+.back-white h3 {
     color: #2e2e2e;
     text-transform: uppercase;
     text-align: center;
@@ -62,38 +60,39 @@
 }
 
 .half-full-width {
-  width: 100%;
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  background-color: #f8f9f9;
-  padding: 20px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    background-color: #f8f9f9;
+    padding: 20px;
 }
 
 .full-width {
-  width: 95%;
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  background-color: #f8f9f9;
-  padding: 20px;
+    width: 95%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: #f8f9f9;
+    padding: 20px;
 }
 
-.form{
+.form {
     width: 60%;
     margin-left: 20%;
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(100px, auto);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
 }
+
 .one {
-  grid-column: 1 ;
-  grid-row: 1/4 ;
-  background: url('/assets/blandine.jpg');
-  background-size: cover;
+    grid-column: 1;
+    grid-row: 1/4;
+    background: url('/assets/blandine.jpg');
+    background-size: cover;
 }
 
 .one:hover {
@@ -101,11 +100,11 @@
     opacity: 0.5;
 }
 
-.two { 
-  grid-column: 2;
-  grid-row: 1/4;
-  background: url('/assets/Enfant.jpg');
-  background-size: cover;
+.two {
+    grid-column: 2;
+    grid-row: 1/4;
+    background: url('/assets/Enfant.jpg');
+    background-size: cover;
 }
 
 .two:hover {
@@ -114,10 +113,10 @@
 }
 
 .three {
-  grid-row: 1/4;
-  grid-column: 3;
-  background: url('/assets/Enceinte.jpg');
-  background-size: cover;
+    grid-row: 1/4;
+    grid-column: 3;
+    background: url('/assets/Enceinte.jpg');
+    background-size: cover;
 }
 
 .three:hover {
@@ -126,10 +125,10 @@
 }
 
 .four {
-  grid-column: 4;
-  grid-row: 1/4;
-  background: url('/assets/famille.jpg');
-  background-size: cover;
+    grid-column: 4;
+    grid-row: 1/4;
+    background: url('/assets/famille.jpg');
+    background-size: cover;
 }
 
 .four:hover {
@@ -138,98 +137,71 @@
 }
 
 .first-wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-  background-color: #f8f9f9;
+    background-color: #f8f9f9;
+    margin-top: 100px;
+    overflow: hidden;
 }
 
 .first-one {
-  grid-column: 1;
-  grid-row: 1/3;
-  background: url('/assets/rncp.png')no-repeat;
-  background-size: contain;
-  padding: 20px;
-  margin-left: 30%;
-  margin-top: 40px;
-  width: 20%;
+    background: url('/assets/rncp.png')no-repeat;
+    background-size: contain;
+    padding: 50px;
+    width: 25%;
 }
-.first-two { 
-  grid-column: 2;
-  grid-row: 1/3;
-  background: url('/assets/sante.png')no-repeat;
-  background-size: contain;
-  padding: 20px;
-  margin-left: 30%;
-  margin-top: 40px;
-  width: 20%;
+
+.first-two {
+    background: url('/assets/sante.png')no-repeat;
+    background-size: contain;
+    padding: 50px;
+    width: 25%;
 }
+
 .first-three {
-  grid-row: 1/3;
-  grid-column: 3;
-  background: url('/assets/syndicat.png')no-repeat;
-  background-size: contain;
-  padding: 20px;
-  margin-left: 30%;
-  margin-top: 40px;
-  width: 20%;
+    background: url('/assets/syndicat.png')no-repeat;
+    background-size: contain;
+    padding: 50px;
+    width: 25%;
 }
+
 .first-four {
-  grid-column: 4;
-  grid-row: 1/3;
-  background: url('/assets/academie.png')no-repeat;
-  background-size: contain;
-  padding: 20px;
-  margin-left: 30%;
-  margin-top: 40px;
-  width: 20%;
-}
-
-.example-card {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 250px;
-  background-color: white;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.example-header-image {
-  background-size: cover;
+    background: url('/assets/academie.png')no-repeat;
+    background-size: contain;
+    padding: 50px;
+    width: 25%;
 }
 
 .second-wrapper {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: minmax(100px, auto);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .second-one {
-  grid-column: 2 ;
-  grid-row: 1;
-}
-.second-two { 
-  grid-column: 3;
-  grid-row: 1;
-}
-.second-three {
-  grid-row: 1;
-  grid-column: 4;
-}
-.second-four {
-  grid-column: 5;
-  grid-row: 1;
+    grid-column: 2;
+    grid-row: 1;
 }
 
-md-card-actions{
-    text-align: center;
+.second-two {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.second-three {
+    grid-row: 1;
+    grid-column: 4;
+}
+
+.second-four {
+    grid-column: 5;
+    grid-row: 1;
 }
 
 .tarif {
     background-color: #f8f9f9;
 }
+
 .underline {
-    display:block;
+    display: block;
     color: white;
     text-decoration: none;
 }
@@ -249,60 +221,69 @@ md-card-actions{
     margin-left: 20px;
 }
 
-.my-card-container .mdc-card {
-  height: 350px;
-  width: 350px;
+.my-card-container .matc-card {
+    height: 350px;
+    width: 350px;
 }
 
 .example-card {
-  width: 400px;  
+    width: 400px;
 }
 
 .example-header-image {
-
-  background-size: cover;
+    background-size: cover;
 }
 
-.card-tarif{
-    display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-size: 1em;
-}
-
-.container-parcours {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-  background-color: white;
-}
-.third-one {
-  grid-column: 1;
-  grid-row: 1/4;
-  background: url('/assets/blandine.png');
-  background-size: cover;
-  z-index: 2;
-}
-
-.wrapper-parcours{
+.wrapper-parcours {
     background-color: white;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 
-.card{
-  margin-left: -20%;
-}
-
-.textify .example-button-row{
-  margin-right: 100px;
-  margin-top: 70px;
-}
-
-.texte2{
-  font-family: 'Raleway', sans-serif;
+.texte2 {
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 20px;
     margin-bottom: -10px;
-    margin-right: 100px;
-    margin-left: 50px;
+}
+
+.blandine {
+    width: 250px;
+    height: 250px;
+    background: url('/assets/blandine-circle.png')no-repeat;
+    background-size: contain;
+}
+
+.containeur {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.coherence {
+    background-color: #f8f9f9;
+}
+
+.atelier {
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.atelier h3 {
+    text-align: center;
+    font-family: 'Crete Round', serif;
+    font-weight: bold;
+    color: #2e2e2e;
+    font-size: 25px;
+}
+
+.texte3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
