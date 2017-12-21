@@ -1,0 +1,36 @@
+<header>
+    <div id="navbar" class="my-header" [ngClass]="{'page-scroll-header': isScrolled}">
+        <div class="wrapper">
+            <div class="logo">
+                <a scrollTo href="#hero">
+                    <h1>B.Sigwald</h1>
+                    <h2>B.S</h2>
+                </a>
+                <p>Sophrologue Certifée RNCP</p>
+            </div>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a class="underline" scrollTo href="#sophrologie">Sophrologie</a></li>
+                        <li><a class="underline" routerLink="/applications">Applications</a></li>
+                        <li><a class="underline" scrollTo href="#parcours">Parcours</a></li>
+                        <li><a class="underline" scrollTo href="#coherence">Cohérence Cardiaque</a></li>
+                        <li><a class="underline" scrollTo href="#tarifs">Séances & tarifs</a></li>
+                    </ul>
+
+                    <div class="dropdown">
+                        <button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">&#xE8FE;</i></button>
+                        <mat-menu #menu="matMenu">
+                            <a scrollTo href="#sophrologie"><button mat-menu-item scrollTo href="#sophrologie">Sophrologie</button></a>
+                            <a scrollTo href="#applications"><button mat-menu-item>Applications</button></a>
+                            <a scrollTo href="#parcours"><button mat-menu-item>Parcours</button></a>
+                            <a scrollTo href="#coherence"><button mat-menu-item>Cohérence Cardiaque</button></a>
+                            <a scrollTo href="#tarifs"><button mat-menu-item>Séances & tarifs</button></a>
+                        </mat-menu>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</header>

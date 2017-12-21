@@ -1,0 +1,64 @@
+.container {
+    margin-bottom: 100px;
+}
+
+.colorblue {
+    color: #7e4d81;
+}
+
+.darkblue {
+    color: #1f4481;
+}
+
+.texte {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: -10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Crete Round', serif;
+    font-weight: bold;
+    color: #2e2e2e;
+    font-size: 45px;
+}
+
+h2 {
+    font-weight: 300;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.hero-image {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    padding-top: 1px;
+    background: url('/assets/lavande.jpg') no-repeat center;
+    background-size: cover;
+    background-position: center;
+}
+
+.fade {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background: url('/assets/fade.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-image h2 {
+    font-family: 'Dancing Script', cursive;
+    margin-top: 100px;
+}
+
+.color {
+    color: #02b8dd;
+}

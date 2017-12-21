@@ -15,28 +15,37 @@ import { MatInputModule} from '@angular/material';
 import { FooterComponent } from './footer/footer.component';
 import { ScrollToModule} from 'ng2-scroll-to';
 import { MatCardModule} from '@angular/material';
-import { ParcoursComponent } from './parcours/parcours.component';
 import { MatGridListModule} from '@angular/material';
 import { CardComponent } from './card/card.component';
 import { HttpClientModule} from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
-import { CoherenceComponent } from './coherence/coherence.component';
+import { CoherenceComponent } from './pages/coherence/coherence.component';
 import { MatTabsModule} from '@angular/material';
 import { MatMenuModule} from '@angular/material';
-import { CohérenceComponent } from './cohérence/cohérence.component';
-import { SophrologieComponent } from './sophrologie/sophrologie.component';
+
 import 'hammerjs';
+import { ParcoursComponent } from './pages/parcours/parcours.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { SophrologieComponent } from './pages/sophrologie/sophrologie.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NavComponent } from './nav/nav.component';
+import { MainComponent } from './main/main.component';
+import { ApplicationsComponent } from './pages/applications/applications.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ParcoursComponent,
     CardComponent,
     CoherenceComponent,
-    CohérenceComponent,
+    ParcoursComponent,
     SophrologieComponent,
+    NavbarComponent,
+    NavComponent,
+    MainComponent,
+    ApplicationsComponent,
+
   ],
   imports: [
     MatButtonModule,
@@ -51,10 +60,13 @@ import 'hammerjs';
     ReactiveFormsModule,
     MatTabsModule,
     MatInputModule,
+    MatMenuModule,
     ScrollToModule.forRoot(),
     MatCardModule,
     MatGridListModule,
     HttpClientModule,
+    RouterModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -64,8 +76,8 @@ export class AppModule { }
 const appRoutes: Routes = [
 
   {
-    path: 'coherence',
-    redirectTo: '/coherence',
+    path: 'cohe',
+    redirectTo: '/cohe',
      pathMatch: 'full',
   }
 ];

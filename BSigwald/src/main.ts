@@ -9,6 +9,7 @@ import { MatButtonModule } from '@angular/material';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material';
+import { RouterModule, Routes } from '@angular/router';
 
 
 if (environment.production) {
